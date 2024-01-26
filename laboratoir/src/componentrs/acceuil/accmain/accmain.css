@@ -1,0 +1,154 @@
+
+
+
+article.flex{
+    width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+  gap: 1rem;
+  align-items: center;
+}
+article.flex .left-section{
+     flex-grow: 1.5;
+    border: 1px solid rgba(93, 188, 252, 0.3); 
+    border-radius: 5px;
+    width: 90%;
+
+    box-shadow: 1px 1px 40px #2323242a;
+    margin: 1rem;
+    transition: 0.5ms;
+    
+}
+.title{
+    padding: 0.5rem 1.5rem;   
+    color: var(--title);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.sub-title{
+   text-align: center;
+    padding:  1.5rem; 
+    color: var(--sub-title);
+    font-style: normal;
+    font-size: 1.5rem;
+}
+article.flex .left-section:hover{
+  scale: 1.01;
+ cursor: pointer;
+ 
+}
+article.flex .right-section{
+    border-radius: 5px;
+    width: 70%;
+    box-shadow: 1px 1px 40px #2323242a;
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    margin: 1rem;
+    padding:  1.5rem; 
+    
+    text-align: center;
+    /* background: #2323242a; */
+}
+  
+
+article.flex .right-section img{
+    width: 80%;
+    margin: 2rem;
+    background: #2323242a;
+}
+
+
+ /* ===========================
+ - cards
+ ============================= */
+
+ section.title h3{
+ 
+    color: var(--title);
+    font-weight: bold;
+    font-size: 1.5rem;
+  
+ }
+
+
+
+.actu-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 1rem 0.4rem;
+  justify-content: space-around;
+
+
+}
+
+.cards img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cards {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  border-radius: 5px;
+  transition: 0.3s;
+  width: 50%;
+
+}
+
+.cards:hover {
+  border: 1px solid var(--blue);
+  /* background-color: rgba(246, 246, 246); */
+
+  scale: 1.01;
+  cursor: pointer;
+}
+
+.card-container {
+  justify-content: center;
+  margin: 2rem;
+  /* flex-wrap: wrap;  */
+  /* background: #000; */
+  column-gap: 2rem;
+  row-gap: 2rem;
+  gap: 2rem;
+
+
+}
+
+.card-box {
+  padding: 1rem 0.4rem;
+  width: 80%;
+}
+
+.card-box h3  {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card-box p{
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+
+ @media (max-width: 600px)  {
+    article.flex{
+        flex-direction: column;
+        gap: 0.5rem;
+       align-items: center;
+       width: 90%;
+    }
+
+    
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(93, 188, 252, 0.3);
+        border-radius: 5px;
+        transition: 0.3s;
+        width: 40%;
+      
+      }
+}

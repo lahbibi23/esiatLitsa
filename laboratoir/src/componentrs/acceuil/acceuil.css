@@ -1,0 +1,103 @@
+.top-section{
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.top-section  img{
+  width: 100%;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.tittre{
+  position: absolute;
+  z-index: 20;
+  font-size: 1.5rem;
+  font-weight: bold;
+  top: 30%;
+  left: 5%;
+}
+
+.Suite{
+ position: absolute;
+ top: 65%;
+ left: 4%;
+ width: 10%;
+font-weight: bold;
+ z-index: 20;
+ font-size: 0.9rem;
+ color: rgb(0, 0, 7);
+ border: 1px solid rgb(158, 158, 247);
+ background-color: transparent;
+ text-align: center;
+ transition: 0.3ms;
+ border-radius: 55px;
+ padding: 0.5rem;
+ 
+}
+
+
+@keyframes move{
+  0%   {background-color:transparent; left:4%; top:65%;}
+
+  100%  {background-color:rgb(252, 252, 252); left:4%; top:65%;}
+
+}
+ .Suite:hover{
+  cursor: pointer;
+  scale: 1.01;
+  animation: move 4s 1 ;
+  
+ }
+
+h3{
+  padding: 0.5rem 1.5rem;   
+  color: var(--title);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+
+.galerie-container{
+  align-items: center;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(93, 188, 252, 0.3);
+
+}
+
+
+
+.icon-arrow-right1 , .icon-arrow-left{
+  color: black;
+  font-size: 3rem;
+  margin: 3rem;
+  border :1px solid black;
+
+}
+
+.galerie{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*==========================
+- Rezsponsive
+===========================*/
+
+
+@media(max-width : 600px){
+  .card-container  {
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  
+  }
+ 
+  
+}
