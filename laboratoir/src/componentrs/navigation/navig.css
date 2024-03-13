@@ -14,14 +14,19 @@
     1.1 Header top
 =========================== */
 .top{
-  justify-content: space-between;
- width: 100%;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+ /* width: 100%;
  border: 1px solid rgba(197, 197, 197);
- border-radius: 55px;
+ border-radius: 55px; */
 }
-.top-right p{
-font-size: 0.9rem;
-font-style: italic;
+ p{
+font-size: 0.5rem;
+text-align: center;
+
 }
 .icon-linkedin-with-circle,
 .icon-facebook,
@@ -47,6 +52,10 @@ font-style: italic;
   border: 1px solid rgb(56, 55, 54);
 }
 
+.top .logo{
+  font-size: 5px;
+}
+
 
 header.flex {
     /* justify-content: space-between;
@@ -63,37 +72,70 @@ header.flex {
   
   }
   
-  header.flex nav {
+  header.flex nav.flex {
     /* background-color: #fdfdfd;
     border: 1px solid rgb(173,197,213) ;
     padding: 0.77rem 1.6rem;
     border-radius: 55px;
     box-shadow: 1px 1px 40px #2323242a;                                                                                                                                                                                                                  */
- 
-    padding: 0.77rem 1.6rem; 
+   align-items: center; 
+  padding: 0.77rem 1.6rem; 
+  margin-left: -5rem;
+  margin-top: 3rem;
+   gap: 7rem;
   }
   
-  header ul.flex {
+  header ul.list {
     /* gap: 16px; */
-    gap:20px;
+    /* gap:20px; */
     text-align: center;
     align-items: center;
+    background-color:rgb(224,232,67) ;
+    padding: 0;
+    margin-right: auto;
+     margin-left: auto ;
+     width: 90%;
   }
+  header ul.list li {
+   padding: 10px;
+    border: 1px solid rgb(247, 242, 242);
+     height: 60px; 
+    /* width: 120px; */
+    text-align: center;
+   align-items: center;
+    background-color: rgb(224,232,67);
   
-  header ul li a {
-    color: black;
+  }
+
+  header ul.list li:hover {
+   
+     background-color: rgb(0,127,50);
+   
+   }
+
+  header ul.list li a {
+   margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
     opacity: 0.9;
     font-size: 1rem;
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-wrap: nowrap;
+ 
+  }
+  header ul.list li:first-child {
+    background-color: rgb(0, 127, 50);
+ 
    
   }
   
-  header ul li a:hover {
-    color: var(--title);
+  header ul.list li a:hover {
+ 
     scale: 1.1;
     opacity: 1;
-   
+  
   
   }
   
@@ -162,21 +204,41 @@ header.flex {
    padding: 1px;
     padding-top: 10px;
     position: absolute;
-    width: 130px;
+    width: 110px;
     margin-left: -2.5rem;
-    background:white;
-    border-radius: 10px;
+    background:transparent;
+      border-radius: 10px;
+      border: 0.5px solid transparent;
     /* box-shadow: 0 5px 4px 0 #d3cfc9; */
     z-index: 1;
     transition: 0.5ms;
-
+    left:5rem;
+        top: 2rem; 
      }
-     .dropdown-content ul{
+     .dropdown-content ul.drop{
      padding: 1px;
      transition: 0.5ms;
+   
      }
+     .dropdown-content ul.drop :hover{
+     background-color: rgb(224,232,67);
+    
+      }
+      
+     .dropdown-content ul.drop a{
+      text-wrap: wrap;
+    
+      }
 
 
+
+
+     .dropdown-content ul.drop :first-child{
+      padding: 1px;
+      transition: 0.5ms;
+      background-color: rgb(224,232,67);
+      }
+ 
 
 
     .dropdown-content :last-child{
@@ -185,6 +247,7 @@ header.flex {
     
     .dropdown:hover .dropdown-content{
         display: block;
+
     }
 
 
@@ -248,6 +311,8 @@ header.flex {
     border: none;
   }
   
+
+
   header .fixed ul.modal li a {
     font-size: 1rem;
   }

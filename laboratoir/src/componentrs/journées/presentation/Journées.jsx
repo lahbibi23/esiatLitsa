@@ -30,15 +30,21 @@ function Journées() {
         <h3>Thémes</h3>
         <div className="divider"  style={{marginTop:"2rem",marginBottom:"1rem"}} />
 
-       <div className='themes-container  border flex '>
+       <div className='themes-container   flex '>
         <div className='theme'>
-          <h4>Théme 1: <br />Valorisation des ressources naturelles en Nutrition fonctionnelle</h4>
-        <img src="" alt=" Théme 1" />
+          <h4>thème 1: <br /> Nutrition fonctionnelle</h4>
+        <img src="" alt=" thème 1" />
         </div>
         <div  className='theme '>
-        <h4> Théme 2: <br />L’exploitation durable des ressources naturelles en Agroalimentaire</h4>
-        <img src="" alt=" Théme 2 " />
+        <h4> thème 2: <br />Technologies et procédés innovants </h4>
+        <img src="" alt=" thème 2 " />
+     
         </div>
+        <div  className='theme '>
+        <h4> thème 3: <br />Sécurité alimentaires  </h4>
+        <img src="" alt=" thème 3 " />
+        </div>
+
        </div>
 
 

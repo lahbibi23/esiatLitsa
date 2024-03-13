@@ -58,14 +58,14 @@
     width: 30%;
     align-self: center;
     margin-bottom: 2rem;
-    border: 1px solid rgb(173,197,213) ;
+    border: 1px solid rgb(47, 100, 136, 1) ;
     transition: 0.5ms;
    }
   .hero-section button.plus:hover{
     cursor: pointer;
     scale: 1.01;
     font-weight: bold;
-    border: 1px solid rgb(47, 100, 136) ;
+    border: 1px solid rgb(47, 100, 136:) ;
   }
 
 

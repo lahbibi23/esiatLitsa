@@ -38,56 +38,14 @@ function Appel() {
 
 
             <div className="divider" style={{ marginTop: "2rem", marginBottom: "1rem" }} />
-            <h3>  Comités</h3>
+   
             <div className="divider" style={{ marginTop: "2rem", marginBottom: "1rem" }} />
 
 
 
 
 
-            <div className="commité  flex">
-                <section className="comiI border">
-                    <h3>  I. Comité d’organisation</h3>
-                    <div className="dates ">
-                    <br />
-                        <br />
-                        <br />
-                        <br />
-                        Mouna BOULARES
-                        Imen MAHMOUDI
-                        Imen ZAGHBIB
-                    </div>
-
-
-                </section>
-
-                <section className="comiII">
-                    <h3> II. Comité Scientifique de sélection des communications Orales</h3>
-                    <div className="dates ">
-                    Mouna BOULARES
-                    Olfa BEN MOUSSA
-                    Moncef CHOUAIBI
-                    Sonia BOUDICHE
-                    Imen MAHMOUDI
-                    Imen ZAGHBIB
-                    </div>
-                    
-                </section>
-
-                <section className="comiIII">
-                    <h3>III. Comité Scientifique de sélection des communications par Affiches</h3>
-                    <div className="dates ">
-                    Atef LAKOUD
-                    Mélika MANKAI
-                    Soumaya ARAFA
-                    Slim LAMINE
-                    Youkabed ZARROUG
-                    Ramzi MEJRI
-                    </div>
-                   
-                </section>
-
-            </div>
+          
 
         </>
     )

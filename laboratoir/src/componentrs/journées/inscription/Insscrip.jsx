@@ -67,7 +67,7 @@ function Insscrip() {
       <Navig />
 
       <div className="divider"  style={{marginTop:"5rem",marginBottom:"1rem"}} />
-         <div  className="tittle "> Formulaire d'inscription (à renseigner soigneusement)</div> 
+         <div  className="tittle "> Formulaire d'inscription (à remplire soigneusement)</div> 
        <div className="divider"  style={{marginTop:"2rem",marginBottom:"1rem"}} />
 
 
@@ -165,16 +165,17 @@ function Insscrip() {
             </div>
           </div>
 
-               {/* submit */}
+               {/* Soumettre */}
 
           <button type="submit" className="submit2">
-            Submit
+            Soumettre
           </button>
 
           {submissionMessage && <p>{submissionMessage}</p>}
           {submissionMessage === 'Votre formulaire a été soumis avec succès !' && (
             <p style={{ color: 'rgb(70, 68, 68)'}}>Merci ! Votre formulaire a été soumis avec succès.</p>
-          )}
+       
+       )}
         </form>
       </section>
     </div>

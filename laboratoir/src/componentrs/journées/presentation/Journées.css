@@ -48,7 +48,7 @@
 
 .détails section:hover {
 
-  background-color: rgba(246, 246, 246);
+  background-color: rgb(185, 182, 214);
 
   cursor: pointer;
 }
@@ -74,7 +74,7 @@
 
 
 .themes-container .theme:hover {
-  background-color: rgba(246, 246, 246);
+  background-color: rgb(185, 182, 214);
 
   cursor: pointer;
 }
